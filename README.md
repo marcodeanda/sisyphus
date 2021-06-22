@@ -1,7 +1,7 @@
 # Sisyphus
 ⛰️ Sisyphus: An interactive animation made using HTML, JS, and CSS
 
-<a href="https://marcodeanda.github.io/sisyphus">Try It!</a>
+<a href="https://marcodeanda.github.io/sisyphus" target="">Try It!</a>
 
 Coypright 2020 Marco De Anda
 
