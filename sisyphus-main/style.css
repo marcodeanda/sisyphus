@@ -1,0 +1,142 @@
+body {
+	background-color: rgb(228, 138, 62);
+}
+
+.box {
+	margin-top: 5px;
+	margin-left: -10px;
+	height: 30px;
+	width: 200%;
+	background-color: rgb(9, 8, 7);
+}
+
+.box2 {
+	margin-top: 20px;
+	margin-left: -10px;
+	height: 30px;
+	width: 200%;
+	background-color: rgb(9, 8, 7);
+}
+
+.mountain {
+	margin-top: 5%;
+	margin-left: 15%;
+	border-left: 350px solid transparent;
+	border-right: 350px solid transparent;
+	border-bottom: 400px solid rgb(9, 8, 7);
+}
+
+/*default position of the boulder*/
+
+.boulder {
+	position: relative;
+	top: 440px;
+	left: 4%;
+	height: 100px;
+	width: 105px;
+}
+
+/*Roll up*/
+
+.boulder-on-click {
+	position: relative;
+	top: 440px;
+	left: 4%;
+	height: 100px;
+	width: 105px;
+	transition: all 4s ease-in;
+	transform: rotate(360deg);
+	top: 80px;
+	left: 49.5%;
+}
+
+/*Bounce back to the bottom of the mountain*/
+
+.boulder-let-go {
+	position: relative;
+	animation: fall linear 2.2s 1;
+	height: 100px;
+	width: 105px;
+	top: 440px;
+	left: 4%;
+}
+
+@keyframes fall {
+0% {
+	transform: rotate(-36deg);
+	top: 80px;
+	left: 49.5%;
+}
+10%{
+	transform: rotate(-72deg);
+	top: 50px;
+	left: 45.5%;
+}
+20% {
+	transform: rotate(-108deg);
+	top: 160px;
+	left: 41%;
+}
+30%{
+	transform: rotate(-144deg);
+	top: 130px;
+	left: 36.5%;
+}
+40%{
+	transform: rotate(-180deg);
+	top: 230px;
+	left: 32%;
+}
+50%{
+	transform: rotate(-216deg);
+	top: 190px;
+	left: 28%;
+}
+60%{
+	transform: rotate(-252deg);
+	top: 300px;
+	left: 24%;
+}
+70%{
+	transform: rotate(-288deg);
+	top: 250px;
+	left: 20%;
+}
+80% {
+	transform: rotate(-314deg);
+	top: 350px;
+	left: 16%;
+}
+90%{
+		transform: rotate(-340deg);
+	top: 330px;
+	left: 10%;
+}
+	100%{
+	  transform: rotate(-360deg);
+		top: 440px;
+		left: 4%;
+	}
+}
+
+/*Roll back to the bottom of the mountain*/
+.boulder-roll-back {
+	position: relative;
+	top: 440px;
+	left: 4%;
+	height: 100px;
+	width: 105px;
+	transform: rotate(-180deg);
+	transition: all 2s ease-in;
+}
+
+/*Instructions*/
+.boulder-text {
+	margin-bottom: -15px;
+	margin-left: 25.5%;
+	font-family: Julius Sans One, sans-serif;
+	font-weight: 100;
+	font-style: normal;
+	letter-spacing: 2px;
+	color: rgb(9, 8, 7);
+}
