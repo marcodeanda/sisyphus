@@ -4,16 +4,34 @@
       <title>Sisyphus</title>
       <link rel="stylesheet" href="style.css">
    </head>
-   <body>
+      <body onmouseup="unClick()" onmousedown="onClick()">
       <div class="box"></div>
       <br>
       <br>
       <br>
       <div style="display: table-row">
-         <div class="boulder"></div>
+         <img id="rock" class="boulder" src="boulder.png">
          <div class="mountain"></div>
       </div>
       <p class="boulder-text">Click And Hold To Push The Boulder Up</p>
       <div class="box2"></div>
+
+      <script>
+function onClick() {
+  //roll the boulder up on click and hold
+   document.getElementById("rock").className = "boulder-on-click";
+}
+
+function unClick() {
+  //If the boulder reaches the top of the mountain then it should bounce and roll
+  if (document.getElementById("rock").offsetTop == 172) {
+ document.getElementById("rock").className = "boulder-let-go";
+} else {
+  //If the boulder does not reach the top, it should only roll back to the bottom
+  document.getElementById("rock").className = "boulder-roll-back";
+}
+}
+       </script>
+
    </body>
 </html>
