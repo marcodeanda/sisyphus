@@ -8,11 +8,11 @@ function onClick() {
 function unClick() {
   //If the boulder reaches the top of the mountain then it should bounce and roll
   if (document.getElementById("rock").offsetTop == 172) {
- document.getElementById("rock").className = "boulder-let-go";
+     document.getElementById("rock").className = "boulder-let-go";
      document.getElementById("counter").innerHTML = count;
-    count++;
+     count++;
 } else {
-  //If the boulder does not reach the top, it should only roll back to the bottom
-  document.getElementById("rock").className = "boulder-roll-back";
+     //If the boulder does not reach the top, it should only roll back to the bottom
+     document.getElementById("rock").className = "boulder-roll-back";
 }
 }
