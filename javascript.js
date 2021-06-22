@@ -1,4 +1,4 @@
-var count = 0;
+var count = 1;
 
 function onClick() {
   //roll the boulder up on click and hold
