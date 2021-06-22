@@ -108,15 +108,15 @@ body {
 	left: 16%;
 }
 90%{
-		transform: rotate(-340deg);
+	transform: rotate(-340deg);
 	top: 330px;
 	left: 10%;
 }
-	100%{
-	  transform: rotate(-360deg);
-		top: 440px;
-		left: 4%;
-	}
+100%{
+	transform: rotate(-360deg);
+	top: 440px;
+	left: 4%;
+}
 }
 
 /*Roll back to the bottom of the mountain*/
@@ -133,7 +133,7 @@ body {
 /*Instructions*/
 .boulder-text {
 	margin-bottom: -15px;
-	margin-left: 25.5%;
+	margin-left: 20%;
 	font-family: Julius Sans One, sans-serif;
 	font-weight: 100;
 	font-style: normal;
