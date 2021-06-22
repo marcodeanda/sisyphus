@@ -126,7 +126,7 @@ body {
 	left: 4%;
 	height: 100px;
 	width: 105px;
-	transform: rotate(-180deg);
+	transform: rotate(-360deg);
 	transition: all 2s ease-in;
 }
 
