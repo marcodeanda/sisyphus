@@ -132,10 +132,17 @@ body {
 	transition: all 2s ease-in;
 }
 
-/*Instructions*/
+/*Instructions and Count*/
 .boulder-text {
 	margin-bottom: -15px;
 	margin-left: 265px;
+	font-family: 'Julius Sans One', sans-serif;
+	color: rgb(9, 8, 7);
+}
+
+.boulder-count {
+	margin-bottom: -15px;
+	margin-left: 500px;
 	font-family: 'Julius Sans One', sans-serif;
 	color: rgb(9, 8, 7);
 }
